@@ -4,8 +4,8 @@ import { useState, useRef, useEffect } from 'react';
 import { useContext } from 'react';
 import { ScoreContext} from './ScoreContext';
 import { Link } from 'react-router-dom';
-import O from 'C:/Users/varun/Projects/tictactoe/src/TTT_App/Assets/circle.png'
-import X from 'C:/Users/varun/Projects/tictactoe/src/TTT_App/Assets/ex.png'
+import O from 'C:/Users/varun/Projects/TTT/TTT/src/TTT_App/Assets/circle.png'
+import X from 'C:/Users/varun/Projects/TTT/TTT/src/TTT_App/Assets/ex.png'
 let squares = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
 let rightD = [0, 1, 2, 3, 7, 8, 9, 10, 14, 15, 16, 17];
 let leftD = [3, 4, 5, 6, 10, 11, 12, 13, 17, 18, 19, 20];
