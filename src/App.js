@@ -9,7 +9,7 @@ import { ScoreProvider } from './TTT_App/TTT/ScoreContext';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
     <ScoreProvider>
     <ScoreBoard />
       <Routes>
