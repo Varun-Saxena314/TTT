@@ -1,5 +1,6 @@
 import React from 'react';
 import './TTT.css';
+import './media.css';
 import { useState } from 'react';
 import { useRef } from 'react';
 import { useContext } from 'react';
@@ -178,8 +179,10 @@ const TTT = () => {
     }
 return (
     <div className='TTT_Game'>
+        <div className='whole_title'>
         <h1 className='Title' ref={winner}>A game of Tic Tac Toe by </h1>
         <h1 className='Me' ref={diss}>Varun Saxena</h1>
+        </div>
         <div className="grid">
             <div className="row1">
                 <div className="box" ref = {box0} onClick ={(s) => press(s, 0)}></div>

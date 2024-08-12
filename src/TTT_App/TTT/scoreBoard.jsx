@@ -1,5 +1,6 @@
 import React from 'react';
 import './TTT.css';
+import './media.css';
 import { useContext } from 'react';
 import { ScoreContext } from './ScoreContext';
 const ScoreBoard = () => {
@@ -13,14 +14,14 @@ const ScoreBoard = () => {
             <>
             <div style={{display: 'flex', justifyContent: 'center'}}>Score</div>
             <nav style={{ display: 'flex', justifyContent: 'space-around'}}>
-            <div className='scorex' style={{marginTop: 30}}>X</div>
-            <div className='scoreo' style={{marginTop: 30}}>O</div>
+            <div className='scoreMarg' >X</div>
+            <div className='scoreMarg' >O</div>
             </nav>
             <nav style={{ display: 'flex', justifyContent: 'space-around'}}>
-            <div className='xtrack' style={{marginTop: 30}}>{scorex}</div>
-            <div className='otrack' style={{marginTop: 30}}>{scoreo}</div>
+            <div className='scoreMarg' >{scorex}</div>
+            <div className='scoreMarg' >{scoreo}</div>
             </nav>
-            <button className="newScore" style={{marginTop: 40, marginLeft: 68}} onClick={()=>resetScore()}>Reset Score</button>
+            <button className="newScore"  onClick={()=>resetScore()}>Reset Score</button>
             </>
         </div>
     )
